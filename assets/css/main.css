@@ -47,14 +47,14 @@ body {
     box-shadow: none;
     background: #ddd; }
   .styled-checkbox:checked + label:after {
-    content: url("/its-client-portal/assets/images/correct-mobile.svg");
+    content: url("/assets/images/correct-mobile.svg");
     position: absolute;
     left: 3px;
     top: 0px;
     background: transparent; }
     @media only screen and (max-width: 576px) {
       .styled-checkbox:checked + label:after {
-        content: url("/its-client-portal/assets/images/correct-mobile.svg");
+        content: url("/assets/images/correct.svg");
         left: 2px;
         top: -1px; } }
 
@@ -282,7 +282,7 @@ body {
 
 .usernameTooltip:hover .usernameTooltipContent {
   display: block;
-  transition: all .5s ease-in-out; }
+  transition: all 0.5s ease-in-out; }
 
 .usernameTooltip .usernameTooltipContent {
   margin-top: 16px;
@@ -298,8 +298,8 @@ body {
   text-align: left;
   border-radius: 10px;
   z-index: 20;
-  transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out; }
+  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
   @media only screen and (max-width: 992px) {
     .usernameTooltip .usernameTooltipContent {
       top: 100%;
@@ -334,3 +334,112 @@ body {
       line-height: 23px;
       font-size: 14px;
       color: black; }
+
+.passwordTooltip:hover .passwordTooltipContent {
+  display: block;
+  transition: all 0.5s ease-in-out; }
+
+.passwordTooltip .passwordTooltipContent {
+  margin-top: 16px;
+  position: absolute;
+  left: -330px;
+  width: 300px;
+  max-width: 100%;
+  top: 0;
+  padding: 10px 30px 10px 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  display: none;
+  text-align: left;
+  border-radius: 10px;
+  z-index: 20;
+  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+  @media only screen and (max-width: 992px) {
+    .passwordTooltip .passwordTooltipContent {
+      top: 100%;
+      left: unset; }
+      .passwordTooltip .passwordTooltipContent::before {
+        content: "";
+        right: unset;
+        top: -7px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 !important;
+        box-shadow: 0 -8px 10px -6px #000000 !important;
+        box-shadow: -8px 0 10px -6px #000000 !important;
+        transition: all .5s ease-in-out; } }
+  .passwordTooltip .passwordTooltipContent::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(45deg);
+    right: -8px;
+    box-shadow: 4px -5px 12px -6px #000000; }
+  .passwordTooltip .passwordTooltipContent span {
+    color: #4f4141;
+    font-size: 15px;
+    font-weight: 600;
+    color: black; }
+  .passwordTooltip .passwordTooltipContent ul {
+    margin-top: 10px; }
+    .passwordTooltip .passwordTooltipContent ul li {
+      line-height: 23px;
+      font-size: 14px;
+      color: black; }
+
+.emailTooltip .signUp_emailTooltipContent {
+  margin-top: 16px;
+  position: absolute;
+  left: -330px;
+  width: 300px;
+  max-width: 100%;
+  top: 0;
+  padding: 10px 30px 10px 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  display: none;
+  text-align: left;
+  border-radius: 10px;
+  top: -120px; }
+  @media only screen and (max-width: 992px) {
+    .emailTooltip .signUp_emailTooltipContent {
+      top: 100%;
+      left: unset; }
+      .emailTooltip .signUp_emailTooltipContent::before {
+        content: "";
+        right: unset;
+        top: -7px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 !important;
+        box-shadow: 0 -8px 10px -6px #000000 !important;
+        box-shadow: -8px 0 10px -6px #000000 !important;
+        transition: all .5s ease-in-out; } }
+  .emailTooltip .signUp_emailTooltipContent::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(45deg);
+    right: -8px;
+    box-shadow: 4px -5px 12px -6px #000000; }
+  .emailTooltip .signUp_emailTooltipContent span {
+    color: #4f4141;
+    font-size: 15px;
+    font-weight: 600;
+    color: black; }
+  .emailTooltip .signUp_emailTooltipContent ul {
+    margin-top: 10px; }
+    .emailTooltip .signUp_emailTooltipContent ul li {
+      line-height: 23px;
+      font-size: 14px;
+      color: black; }
+  .emailTooltip .signUp_emailTooltipContent::before {
+    top: 120px; }
+    @media only screen and (max-width: 992px) {
+      .emailTooltip .signUp_emailTooltipContent::before {
+        top: -7px; } }

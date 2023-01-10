@@ -69,11 +69,11 @@ body {
   // Checkmark. Could be replaced with an image
   &:checked + label:after {
     @include sm-screen {
-      content: url("/its-client-portal/assets/images/correct-mobile.svg");
+      content: url("/assets/images/correct.svg");
       left: 2px;
       top: -1px;
     }
-    content: url("/its-client-portal/assets/images/correct-mobile.svg");
+    content: url("/assets/images/correct-mobile.svg");
     position: absolute;
     left: 3px;
     top: 0px;

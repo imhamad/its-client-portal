@@ -139,7 +139,7 @@
 
 // custom Tooltips
 
-// recover user name page
+// recover user
 .feinTooltip {
   &:hover {
     .feinTooltipContent {
@@ -152,7 +152,6 @@
   }
 }
 
-// email input
 .emailTooltip {
   &:hover {
     .emailTooltipContent {
@@ -163,20 +162,52 @@
     @include tooltipContent;
   }
 }
+// end
 
 // recover password
 .usernameTooltip {
   &:hover {
     .usernameTooltipContent {
       display: block;
-      transition: all .5s ease-in-out;
-
+      transition: all 0.5s ease-in-out;
     }
   }
   .usernameTooltipContent {
     @include tooltipContent;
     z-index: 20;
-    transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 }
+// end
+
+// Sign up
+.passwordTooltip {
+  &:hover {
+    .passwordTooltipContent {
+      display: block;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  .passwordTooltipContent {
+    @include tooltipContent;
+    z-index: 20;
+    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.emailTooltip {
+  .signUp_emailTooltipContent {
+    @include tooltipContent;
+    top: -120px;
+    &::before {
+      top: 120px;
+      @include lg-screen() {
+        top: -7px;
+      }
+    }
+  }
+}
+
+// custom Tooltips end

@@ -42,19 +42,57 @@
           class="d-flex flex-column justify-content-between formContentContainer"
         >
           <div class="contentWrapper">
-            <a href="index.html"><img src="assets/images/logo.svg" alt="" class="logo"/></a>
+            <a href="index.html"
+              ><img src="assets/images/logo.svg" alt="" class="logo"
+            /></a>
             <h6>Sign Up to your account</h6>
             <form action="">
-              <div class="w-100 mb-3">
+              <div class="w-100 mb-3 position-relative usernameTooltip">
                 <input
                   type="text"
-                  class="w-100"
+                  class="w-100 position-static"
                   placeholder="Enter Email / Username"
                 />
+                <!-- Tooltip content -->
+                <div class="usernameTooltipContent">
+                  <span>Username Rules</span>
+                  <ul>
+                    <li>Cannot have any spaces.</li>
+                    <li>
+                      Recipient name can only have maximum of 64 characters.
+                    </li>
+                    <li>
+                      Recipient name cannot start with a special character.
+                    </li>
+                    <li>Recipient name cannot end with a special character.</li>
+                    <li>Recipient name must have all printable characters.</li>
+                    <li>
+                      Recipient name cannot have two special characters
+                      together.
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="d-flex gap-2 w-100">
+              <div class="d-flex gap-2 w-100 position-relative passwordTooltip">
                 <div class="w-100 mb-3">
-                  <input type="password" class="w-100" placeholder="Password" />
+                  <input
+                    type="password"
+                    class="w-100 position-static"
+                    placeholder="Password"
+                  />
+                </div>
+                <!-- Tooltip content -->
+                <div class="passwordTooltipContent">
+                  <span>Password Rules</span>
+                  <ul>
+                    <li>Must be between 8 and 30 characters.</li>
+                    <li>Must have at least one upper case letter.</li>
+                    <li>Must have at least one lower case letter.</li>
+                    <li>Must have at least one number.</li>
+                    <li>Must have at least one special character.</li>
+                    <li>Cannot have any spaces.</li>
+                    <li>Cannot contain username.</li>
+                  </ul>
                 </div>
                 <div class="w-100 mb-3">
                   <input
@@ -64,11 +102,58 @@
                   />
                 </div>
               </div>
-              <div class="w-100 mb-3">
-                <input type="text" class="w-100" placeholder="FEIN" />
+              <div class="w-100 mb-3 position-relative feinTooltip">
+                <input
+                  type="text"
+                  class="w-100 position-static"
+                  placeholder="FEIN"
+                />
+                <!-- Tooltip content -->
+                <div class="feinTooltipContent">
+                  <span>FEIN Rules</span>
+                  <ul>
+                    <li>Must be 9 numbers.</li>
+                    <li>Must have a dash after 2nd number.</li>
+                    <li>Cannot have any spaces.</li>
+                  </ul>
+                </div>
               </div>
-              <div class="w-100 mb-3">
-                <input type="Email" class="w-100" placeholder="Email" />
+              <div class="w-100 mb-3 position-relative emailTooltip">
+                <input
+                  type="Email"
+                  class="w-100 position-static"
+                  placeholder="Email"
+                />
+                <div class="emailTooltipContent signUp_emailTooltipContent">
+                  <span>Email Rules</span>
+                  <!-- Tooltip content -->
+                  <ul>
+                    <li>Cannot have any spaces.</li>
+                    <li>
+                      Recipient name can only have maximum of 64 characters.
+                    </li>
+                    <li>
+                      Recipient name cannot start with a special character.
+                    </li>
+                    <li>Recipient name cannot end with a special character.</li>
+                    <li>Recipient name must have all printable characters.</li>
+                    <li>
+                      Recipient name cannot have two special characters
+                      together.
+                    </li>
+                    <li>
+                      Domains must have an inner domain and a main domain,
+                      separated by a dot.
+                    </li>
+                    <li>
+                      Inner domains can only have a maximum of 253 characters.
+                    </li>
+                    <li>
+                      Inner domains can only have a dash or dot for special
+                      characters.
+                    </li>
+                  </ul>
+                </div>
               </div>
               <button class="w-100 mb-4 submit_button">Sign Up</button>
               <div class="mt-3">
