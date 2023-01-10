@@ -206,7 +206,8 @@ body {
         transform: translateX(-50%);
         box-shadow: 0 !important;
         box-shadow: 0 -8px 10px -6px #000000 !important;
-        box-shadow: -8px 0 10px -6px #000000 !important; } }
+        box-shadow: -8px 0 10px -6px #000000 !important;
+        transition: all .5s ease-in-out; } }
   .feinTooltip .feinTooltipContent::before {
     content: "";
     width: 16px;
@@ -256,7 +257,8 @@ body {
         transform: translateX(-50%);
         box-shadow: 0 !important;
         box-shadow: 0 -8px 10px -6px #000000 !important;
-        box-shadow: -8px 0 10px -6px #000000 !important; } }
+        box-shadow: -8px 0 10px -6px #000000 !important;
+        transition: all .5s ease-in-out; } }
   .emailTooltip .emailTooltipContent::before {
     content: "";
     width: 16px;
@@ -279,7 +281,8 @@ body {
       color: black; }
 
 .usernameTooltip:hover .usernameTooltipContent {
-  display: block; }
+  display: block;
+  transition: all .5s ease-in-out; }
 
 .usernameTooltip .usernameTooltipContent {
   margin-top: 16px;
@@ -294,7 +297,9 @@ body {
   display: none;
   text-align: left;
   border-radius: 10px;
-  z-index: 20; }
+  z-index: 20;
+  transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; }
   @media only screen and (max-width: 992px) {
     .usernameTooltip .usernameTooltipContent {
       top: 100%;
@@ -307,7 +312,8 @@ body {
         transform: translateX(-50%);
         box-shadow: 0 !important;
         box-shadow: 0 -8px 10px -6px #000000 !important;
-        box-shadow: -8px 0 10px -6px #000000 !important; } }
+        box-shadow: -8px 0 10px -6px #000000 !important;
+        transition: all .5s ease-in-out; } }
   .usernameTooltip .usernameTooltipContent::before {
     content: "";
     width: 16px;
