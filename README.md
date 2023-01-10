@@ -1,6 +1,5 @@
-# omnibooks
+# TrakPay
 
-Track Pay
 
 <h2>Based on Bootstrap the project has very simple structure</h2>
 it contain all the html files on root level directory and index.html is the main enterance file
